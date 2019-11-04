@@ -28,11 +28,22 @@ def __main__():
     time.sleep(2)
 
     #Actual code
-    desiredlocation = ' <User name> /Documents/Projects'
+    desiredlocation = 'bluej/Documents/Projects'
     if os.getcwd() != desiredlocation:
         while os.getcwd() != '/home':
             os.chdir('..')
-        os.chdir(desiredlocation)
+            
+        # Checking if they have a Projects file in their Documents folder
+        try:
+            os.mkdir(desiredlocation)
+        except FileExistsError as e:
+            print('You already have a /Projects Directory in your Documents folder. Great!')
+            os.chdir(desiredlocation)
+
+        try:
+            os.chdir(desiredlocation)
+        except FileNotFoundError as e:
+            print('')
 
     #Making and entering the project directory
     os.mkdir(projectname)
