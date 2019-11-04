@@ -9,6 +9,7 @@ To run this code effectively you will have have the following installed:
   - Python
   - Virtual Env
   - Git
+
 NOTE: Earlier versions may require you to create your own file in your /Documents directory called Projects. Please check commit messages or comments in the script to check if you require this.
 
 
