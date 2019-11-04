@@ -28,7 +28,7 @@ def __main__():
     time.sleep(2)
 
     #Actual code
-    desiredlocation = '<User name>/Documents/Projects'
+    desiredlocation = ' <User name> /Documents/Projects'
     if os.getcwd() != desiredlocation:
         while os.getcwd() != '/home':
             os.chdir('..')
