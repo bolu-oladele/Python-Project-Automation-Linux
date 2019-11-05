@@ -1,6 +1,6 @@
 # Python-Project-Automation-Linux
 
-This is a python script that will automated the initial stages of making a project in python. It will find your Projects Directory and then create in it a file for your project with requirements.txt, info.txt, a virtual machine set up inside of it and a 'git init' command run inside of it.
+This is a python script that will automated the initial stages of making a project in python. It will find your Projects Directory and then create in it a file for your project with requirements.txt, info.txt, a virtual machine set up inside of it and an empty git repository made within the project file.
 
 This configuration is for linux do it's file system. A version for windows should soon be added to the repo.
 
